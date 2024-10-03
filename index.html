@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image.jpg">
+    <link rel="stylesheet" href="style.css">
+    <title>Barcode</title>
+</head>
+    <body>
+
+        <div class="container">
+            <div class="user-input">
+                <input type="text" placeholder="Enter text or url" name="">
+            </div>
+        </div>
+
+        <div class="color-box">
+            <div class="line-color">
+                <input type="text" value="#000000">
+                <div></div>
+            </div>
+            <div class="bg-color">
+                <input type="text" value="#FFFFFF">
+                <div></div>
+            </div>
+        </div>
+       <div class="btns">
+            <button class="generate-btn">Generate</button>
+            <button class="download-btn">Download</button>
+        </div>
+        <div class="barcode-box">
+            <svg id="barcode"></svg>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.0/JsBarcode.all.min.js">
+
+    </script>
+    <script src="Barcode.js"></script>
+</body>
+</html>
